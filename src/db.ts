@@ -1,22 +1,13 @@
 const knex  = require("knex");
 
-import { attachOnDuplicateUpdate } from "knex-on-duplicate-update";
 
-attachOnDuplicateUpdate();
-
-
-// knex.QueryBuilder.extend("toArray", function (res: String): any{
-
-//   console.log(res)
-//   return JSON.parse(JSON.stringify(res));
-// });
 const db = knex({
-  client: 'pg',
+  client: process.env.DB_CLIENT,
   connection: {
-    host: "127.0.0.1",
-    user: "todo",
-    password: "1",
-    database: "todo"
+    host: process.env.DB_HOST,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASS,
+    database: process.env.DB_SCHEMA
   }
 });
 

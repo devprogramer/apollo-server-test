@@ -9,6 +9,9 @@ interface TodoInput {
 }
 
 
+
+
+
 export const resolvers = {
   Query: {
     getTodo: async (id: number) => {
@@ -17,8 +20,14 @@ export const resolvers = {
   },
 
   Mutation: {
-  	addTodo: async (_:any,  {description, status}: TodoInput ) => {
-  		return  await todoModel.create(description, status);
+  	addTodo: async (_:any,  {description}: TodoInput ) => {
+  		return  await todoModel.create(description);
   	},
+  	removeTodo: async(_:any, {id}: any ) => {
+  		return  await todoModel.remove(id);
+  	},
+  	setStatus: async (_:any, {id, status}: any ) => {
+  		return await todoModel.setStatus(id, status);
+  	}
   }
 };
