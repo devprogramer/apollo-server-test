@@ -5,6 +5,9 @@
   "main": "index.js",
   "scripts": {
     "migrate": "db-migrate up",
+    "deploy": "npm install; npm migrate; serverless deploy --stage prod",
+    "build": "npm install; npm migrate; serverless offline start",
+    "start": "serverless offline start --verbose",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
