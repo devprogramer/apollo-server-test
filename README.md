@@ -1,6 +1,10 @@
 # apollo-server-test
 
 
-serverless deploy --stage prod
 
+
+npm install
+npm migrate
+npx serverless offline start
+serverless deploy --stage prod
 
