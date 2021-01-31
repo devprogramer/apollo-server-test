@@ -39,7 +39,7 @@ mutation {
 }
 
 mutation {
-  addTodo(description: "Test", status:0)
+  addTodo(description: "Test")
 }
 
 ```
