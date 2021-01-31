@@ -1,8 +1,5 @@
-# apollo-server-test
+# Apollo-server-test. Quick start
 
-
-
-## Quick start
 
 > npm install
 > npm migrate
