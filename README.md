@@ -4,20 +4,20 @@
 
 ## Quick start
 
-npm install
-npm migrate
+> npm install
+> npm migrate
 ## Offline start
 
-serverless offline start
+* serverless offline start
 * or
-npx serverless offline start
+* npx serverless offline start
 
 ## Deploy 
-serverless deploy --stage prod
+> serverless deploy --stage prod
 
 ## Query examples
 
-```json
+```code
 query{
   getTodo{
     description
