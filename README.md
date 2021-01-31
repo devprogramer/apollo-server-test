@@ -2,6 +2,7 @@
 
 
 > npm install
+> 
 > npm migrate
 ## Offline start
 
