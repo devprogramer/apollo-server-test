@@ -2,20 +2,22 @@
 
 
 
-= Quick start =
+## Quick start
+
 npm install
 npm migrate
-== Offline start ==
+## Offline start
+
 serverless offline start
-: or
+* or
 npx serverless offline start
 
-== Deploy ==
+## Deploy 
 serverless deploy --stage prod
 
-== Query examples ==
+## Query examples
 
-<syntaxhighlight lang="json">
+```json
 query{
   getTodo{
     description
@@ -40,4 +42,4 @@ mutation {
   addTodo(description: "Test", status:0)
 }
 
-</syntaxhighlight>
+```
